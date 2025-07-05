@@ -1,0 +1,94 @@
+/* Additional CSS */
+body {
+    font-family: sans-serif;
+}
+/* Removed .navbar-brand img styles as there's no image now */
+.header-section {
+    background-color: #d4dfff; /* Changed background color as per your update */
+    padding: 40px 0;
+    text-align: center;
+}
+.pricing-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.pricing-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4786c9; /* Changed price color as per your update */
+}
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.pricing-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-card ul li:last-child {
+    border-bottom: none;
+}
+.pricing-card .btn-primary {
+    background-color: #8b93e5; /* Changed button background as per your update */
+    border-color: #140265; /* Changed button border as per your update */
+}
+.contact-section {
+    background-color: #233f5b; /* Changed background color as per your update */
+    color: white;
+    padding: 50px 0;
+}
+.contact-section h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+.contact-info .icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+.footer-section {
+    background-color: #192530; /* Changed background color as per your update */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.feature-icon {
+    margin-right: 10px;
+    color: #3e9366; /* Changed feature icon color as per your update */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 767.98px) {
+    .pricing-card {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px; /* Constrain card width on mobile */
+    }
+    .contact-section {
+        text-align: center;
+    }
+}
+
+/* For 'visible-section' to have an effect, you'd need corresponding CSS: */
+.pricing-plans {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.pricing-plans.visible-section {
+    opacity: 1;
+    transform: translateY(0);
+}
