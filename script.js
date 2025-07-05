@@ -1,5 +1,3 @@
-// script.js
-
 // This script runs when the DOM is fully loaded.
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Update the current year in the footer
@@ -78,16 +76,3 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(pricingSection);
     }
 });
-
-// Note: For 'visible-section' to have an effect, you'd need corresponding CSS:
-/*
-.pricing-plans {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-.pricing-plans.visible-section {
-    opacity: 1;
-    transform: translateY(0);
-}
-*/
